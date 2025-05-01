@@ -169,11 +169,13 @@
   position="-60 -20 -75" 
   scale="10 10 10" 
   rotation="-90 -135 0 "
-  ></a-entity>        west-ham-bubbles-77370.mp3
+  ></a-entity>      
 
-  
-  <a-entity>const audio = new Audio('sound-effect.mp3'); // Replace with the actual file
-    audio.play(west-ham-bubbles-77370.mp3);</a-entity>
+// Play the audio on a button click
+document.getElementById('playButton').addEventListener('click', () => {
+    audio.play();
+});
+
 
 </body>
 </html>
