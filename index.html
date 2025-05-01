@@ -179,7 +179,13 @@
   sound="volume: 100">
 </a-sound>
  
-  
+<a-entity 
+position="0 1.5 -3" 
+geometry="primitive: plane; height: 0.5; width: 1" 
+material="color: blue" 
+text="value: Play Sound; align: center"
+onclick="document.querySelector('a-sound').components.sound.playSound()">
+</a-entity>
   
 
 
