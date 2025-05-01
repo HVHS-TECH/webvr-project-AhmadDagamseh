@@ -8,26 +8,58 @@
   </head>
     <body>
     <a-scene>
-      <a-sky color="lightblue"></a-sky>
+      <a-sky src="nebula.png"></a-sky>
       
        <!-- Put this inside the <a-scene> -->
       
-      <a-entity 
-      
-      id="football" ply-model="src: fb.ply" 
-      position="15.01631 -14.1803 15.01277" 
-      rotation="-90 0 90" 
-      scale="7.525 8 7"
-      
-      ></a-entity>
        
       
-      id="food truck" ply-model="src: FOOD TRUCK FOR PROJECT.ply" 
-      <a-entity id="food truck" ply-model="src: FOOD TRUCK FOR PROJECT.ply" position="-19.66838 -5.22934 18.79302"
-      rotation="-90 -90 90"
-      scale="3.5 2.5 3"
-      ></a-entity>
-      <a-entity camera="" position="0 2.88153 0" wasd-controls="" rotation="-8.1360006908577 151.37544947356292 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+      
+        <a-entity id="football" ply-model="src: fb.ply" 
+        position="-50.4335 -28.37459 49.3826" 
+        rotation="-90 0 0" scale="24 24 14"></a-entity>
+      
      
-  </body>
+      
+        <a-entity camera="" position="-33.18019 6.65278 5.07185" wasd-controls="" 
+        rotation="-32.77318588148311 -75.85961207532108 0" 
+        look-controls="" aframe-injected="" 
+        data-aframe-inspector-original-camera=""
+        
+        ></a-entity>
+      <a-entity id="food truck" ply-model="src: FOOD TRUCK FOR PROJECT.ply" 
+      position="-60.10449 -12.99987 58.93698" 
+      rotation="-89.99963750135457 0 0" 
+      scale="10 5 7.30653"></a-entity>
+  
+  
+      <a-plane 
+  scale="150 150"
+  color="green"
+  rotation="-90 0 0"
+  ></a-plane>
+  
+  <a-box
+  position="73 1 0"
+  scale="2 57 170"
+  color="silver"
+  ></a-box>
+
+  <a-box
+  position="-73 1 0"
+  scale="2 57 170"
+  color="silver"
+  ></a-box>
+  
+  <a-box position="-10.13137 1 75.39509" 
+  scale="2 57 170" color="silver" material="" geometry="" 
+  rotation="0 -90 0"></a-box>
+  
+  <a-box position="-10.13137 1 -75.39509" 
+  scale="2 57 170" 
+  color="silver" material="" geometry="" 
+  rotation="0 -90 0"></a-box>>
+
+  
+</body>
 </html>
