@@ -185,13 +185,17 @@ loop="true"
 position="-45 2 -5" 
 sound="volume: 20">
 </a-sound>
-<a-scene>
+<a-scene shadow="type: pcfsoft">
+  <!-- Lights -->
   <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
-  <a-light type="directional" color="#ffffff" intensity="1" position="0 10 -10"></a-light>
-  <a-light type="point" color="#ffcc00" intensity="1" position="5 5 5"></a-light>
+  <a-light type="directional" color="#ffffff" intensity="1" position="0 10 -10" castShadow="true"></a-light>
   
-  <!-- Your existing entities -->
-  <a-entity id="tree" ply-model="src: tree.ply" position="-60 -20 -75" scale="10 10 10" rotation="-90 -135 0"></a-entity>
+  <!-- Ground -->
+  <a-plane position="0 0 0" rotation="-90 0 0" width="150" height="150" color="green" shadow="receive: true"></a-plane>
+  
+  <!-- Objects -->
+  <a-entity id="tree" ply-model="src: tree.ply" position="-60 -20 -75" scale="10 10 10" rotation="-90 -135 0" shadow="cast: true"></a-entity>
+  <a-entity id="football" ply-model="src: fb.ply" position="-50.4335 -28.37459 49.3826" rotation="-90 0 0" scale="24 24 14" shadow="cast: true"></a-entity>
 </a-scene>
 
   
