@@ -185,7 +185,14 @@ loop="true"
 position="-45 2 -5" 
 sound="volume: 20">
 </a-sound>
-
+<a-scene>
+  <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
+  <a-light type="directional" color="#ffffff" intensity="1" position="0 10 -10"></a-light>
+  <a-light type="point" color="#ffcc00" intensity="1" position="5 5 5"></a-light>
+  
+  <!-- Your existing entities -->
+  <a-entity id="tree" ply-model="src: tree.ply" position="-60 -20 -75" scale="10 10 10" rotation="-90 -135 0"></a-entity>
+</a-scene>
 
   
 
